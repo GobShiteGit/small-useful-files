@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How do I calculate a late fee on rent? | Small Useful Files</title><meta name="description" content="A step-by-step daily late fee calculation with a grace period and a cap, with worked examples. Check your lease and local rules.">
+<link rel="canonical" href="https://gobshitegit.github.io/small-useful-files/g/rent-ledger-partial-payments-late-fees/calculate-rent-late-fee-grace-period/">
+<link rel="stylesheet" href="../../../style.css"></head>
+<body><header><a href="../../../">Small Useful Files</a></header>
+<main>
+<h1>How do I calculate a late fee on rent?</h1>
+<p>One common way: find the day the grace period ends, count the days from then until the rent was fully paid, multiply by the daily fee, and apply a cap if your lease has one. Your lease and local rules decide whether this method is allowed for you, so check them first.</p>
+<h3>Before you calculate anything</h3>
+<p>Late fee rules differ by place and by lease. Some places limit the amount or require a minimum grace period, and some leases use a flat fee instead of a daily one. This page does not tell you what is allowed. It shows the arithmetic for one daily-rate method. Read your lease and check the current local rules yourself.</p>
+<h3>What you need from the lease</h3>
+<ul>
+<li>The <strong>due date</strong> of the charge.</li>
+<li>The <strong>grace days</strong>: days after the due date before a fee starts.</li>
+<li>The <strong>fee per day</strong>.</li>
+<li>The <strong>cap</strong>, if there is one: the most a single charge can accrue.</li>
+</ul>
+<h3>Steps</h3>
+<ol>
+<li><strong>Grace end date</strong> = due date + grace days.</li>
+<li><strong>Compare the dates.</strong> If the charge was fully paid on or before the grace end date, there is no fee. If it is still unpaid, use today&#39;s date as the end of the count.</li>
+<li><strong>Days late</strong> = the date it was fully paid (or today) minus the grace end date. Never go below 0.</li>
+<li><strong>Late fee</strong> = days late x fee per day.</li>
+<li><strong>Apply the cap.</strong> If the result is above the cap, use the cap.</li>
+<li><strong>Subtract what you already collected or waived</strong> to get the fee still outstanding.</li>
+</ol>
+<h3>Worked example: paid in two parts (made-up numbers)</h3>
+<p>Rent of 1000 is due Oct 1. Grace is 5 days, the fee is 10 per day, the cap is 100. The tenant pays 600 on Oct 10 and 400 on Oct 20.</p>
+<ul>
+<li>Grace ends Oct 6.</li>
+<li>The rent was fully paid on Oct 20 (the date the balance reached zero), so days late = 14.</li>
+<li>14 x 10 = 140, which is over the cap, so the fee is <strong>100</strong>.</li>
+</ul>
+<p>Note that this method measures to the date the charge was fully paid. It does not charge per dollar and it does not compound.</p>
+<h3>Worked example: still unpaid</h3>
+<p>Rent of 1000 is due Nov 1. Same terms. Nothing has been paid and today is Nov 14.</p>
+<ul>
+<li>Grace ends Nov 6.</li>
+<li>Days late = Nov 14 minus Nov 6 = 8.</li>
+<li>8 x 10 = <strong>80</strong>, under the cap.</li>
+<li>Total owed today = 1000 rent + 80 fee = 1080.</li>
+</ul>
+<p>The fee keeps growing each day until the rent is paid or the cap is reached.</p>
+<h3>Worked example: some fee already collected</h3>
+<p>Rent of 800 is due Oct 1, grace 5 days, fee 8 per day, cap 50. Paid in full on Oct 12. Grace ended Oct 6, so 6 days late, and 6 x 8 = 48. If you collected the 48, the fee outstanding is 0. If you chose to waive it, record it as waived so it does not show as owed.</p>
+<h3>Common mistakes</h3>
+<ul>
+<li>Counting from the due date instead of the grace end date.</li>
+<li>Forgetting that a partial payment may not stop the clock. Under this method the charge counts as late until it is fully paid. Your lease may treat it differently.</li>
+<li>Forgetting the cap.</li>
+<li>Not recording fees you collected or waived, so old fees keep showing as owed.</li>
+<li>Applying a rule you assumed rather than one you checked.</li>
+</ul>
+<h3>If you would rather not do this by hand</h3>
+<p>We make and sell a rent ledger spreadsheet that calculates late fees this way, using a grace period, a daily rate and an optional cap that you set for each tenant, and it works in Excel 2016 or newer and Google Sheets: <a href="https://9797658955612.gumroad.com/l/kfuybt" rel="noopener">https://9797658955612.gumroad.com/l/kfuybt</a></p>
+<div class="card"><h3>We make a file for this</h3><p>Rent Ledger for Small Landlords: Partial Payments + Late Fees (Excel &amp; Google Sheets). We made it and we sell it.</p><p><a href="../../../p/rent-ledger-partial-payments-late-fees/">See what it does and does not do</a></p></div>
+</main>
+<footer><p class="muted">Small Useful Files makes and sells the products on this site. They are tools for keeping records and printing pages, not legal, tax, financial or medical advice.</p></footer>
+</body></html>
